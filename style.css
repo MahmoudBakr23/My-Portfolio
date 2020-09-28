@@ -1,1 +1,71 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #E5E5E5;
+}
+
+html,
+body {
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  color: #E5E5E5;
+  background-color: #191765;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+nav h4 {
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  padding: 1rem;
+  line-height: 20px;
+}
+
+nav ul li a {
+  font-size: 15px;
+  text-decoration: none;
+  position: relative;
+}
+
+nav ul li a::before {
+  content: '';
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  background-color: #F64C12;
+  top: 20px;
+  left: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::before {
+  -webkit-transform: scaleX(0.5);
+          transform: scaleX(0.5);
+}
+/*# sourceMappingURL=style.css.map */
