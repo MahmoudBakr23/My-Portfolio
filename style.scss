@@ -101,15 +101,15 @@ body {
 .effectA:hover {
     filter: blur(0px);
     box-shadow: 0 0 10px 0 $neon,
-    0 0 20px 0 $neon,
-    0 0 40px 0 $neon,
+        0 0 20px 0 $neon,
+        0 0 40px 0 $neon,
 }
 
 .effectO:hover {
     filter: blur(0px);
     box-shadow: 0 0 10px 0 $orange,
-    0 0 20px 0 $orange,
-    0 0 40px 0 $orange,
+        0 0 20px 0 $orange,
+        0 0 40px 0 $orange,
 }
 
 nav {
@@ -117,20 +117,25 @@ nav {
     justify-content: space-around;
     align-items: center;
     text-align: center;
+
     h4 {
         font-size: 14px;
         letter-spacing: 2px;
     }
+
     ul {
         display: flex;
         list-style: none;
+
         li {
             padding: 1rem;
             line-height: 20px;
+
             a {
                 font-size: 15px;
                 text-decoration: none;
                 position: relative;
+
                 &::before {
                     content: '';
                     width: 100%;
@@ -141,6 +146,7 @@ nav {
                     left: 0;
                     transition: 0.5s;
                 }
+
                 &:hover::before {
                     transform: scaleX(0.5);
                 }
@@ -152,15 +158,18 @@ nav {
 main {
     text-align: center;
     margin: 8rem auto;
+
     h1 {
         font-size: 70px;
         line-height: 105.47px;
         color: $light_navy;
         font-weight: 700;
     }
+
     h3 {
         font-size: 30px;
     }
+
     p {
         width: 447px;
         margin: 0 auto;
@@ -169,6 +178,7 @@ main {
         font-weight: 200;
         padding: 5rem 0;
     }
+
     .skills {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -179,13 +189,16 @@ main {
         border-top: 1px solid $orange;
         border-bottom: 1px solid $orange;
         padding: 2rem 0;
+
         ul {
             list-style: none;
+
             .heading {
                 color: $light_navy;
                 font-size: 18px;
                 padding: 0.5rem 0;
             }
+
             li {
                 line-height: 25.5px;
                 font-size: 13.5px;
@@ -193,8 +206,10 @@ main {
             }
         }
     }
+
     .links {
         padding: 5rem 0;
+
         li {
             padding: 0 0.5rem;
         }
@@ -206,12 +221,14 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 80px;
+
     h1 {
         font-size: 50px;
         line-height: 105.47px;
         color: $light_navy;
         font-weight: 700;
         position: relative;
+
         &::before {
             content: '';
             width: 100%;
@@ -222,22 +239,27 @@ main {
             position: absolute;
         }
     }
+
     .project {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
+
         img {
             width: 584px;
             height: 448px;
             background: linear-gradient(0deg, #FFFFFF, #FFFFFF), url(image_processing20200716-21735-f07s4k.png);
             z-index: 2;
         }
+
         .project-content {
             align-self: flex-end;
+
             h3 {
                 line-height: 60px;
                 font-size: 40px;
             }
+
             p {
                 font-size: 20px;
                 line-height: 28px;
@@ -245,20 +267,24 @@ main {
                 margin: 2rem 0;
             }
         }
+
         ul {
             list-style: none;
             display: flex;
             margin: 2rem 0;
+
             li {
                 padding: 0 0.5rem;
                 border-left: 1px solid $orange;
                 line-height: 20px;
                 font-size: 15px;
+
                 &:nth-child(1) {
                     border: none;
                 }
             }
         }
+
         button {
             padding: 0.5rem;
             background-color: $light_navy;
