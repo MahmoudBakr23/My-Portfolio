@@ -98,6 +98,31 @@ body {
     transition: 0.2s;
 }
 
+.seven {
+    height: 155px;
+    width: 308px;
+    left: -41px;
+    top: 3548px;
+    position: absolute;
+    background: $neon;
+    filter: blur(50px);
+    transition: 0.2s;
+}
+
+.eight {
+    height: 916.3824115191364px;
+    width: 246.19229831609636px;
+    left: 970.298828125px;
+    top: 3434px;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    position: absolute;
+    background: $orange;
+    filter: blur(50px);
+    transform: matrix(0.16, 0.47, 0.47, -0.36, 0, 0);
+    transition: 0.2s;
+}
+
 .effectA:hover {
     filter: blur(0px);
     box-shadow: 0 0 10px 0 $neon,
@@ -162,7 +187,7 @@ main {
     h1 {
         font-size: 70px;
         line-height: 105.47px;
-        color: $light_navy;
+        color: $orange;
         font-weight: 700;
     }
 
@@ -293,6 +318,73 @@ main {
             font-size: 15px;
             line-height: 24px;
             outline: none;
+            cursor: pointer;
         }
     }
+}
+
+.contact {
+    display: grid;
+    width: 684px;
+    margin: 10rem auto;
+    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    
+    h1 {
+        color: $light_navy;
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 300;
+        margin: 1rem 0 4rem 0;
+    }
+
+    h1,
+    p,
+    .email,
+    textarea,
+    button {
+        grid-column: 1/3;
+    }
+
+    input,
+    textarea {
+        padding: 0.5rem;
+        border: none;
+        outline: none;
+        z-index: 3;
+    }
+
+    button {
+        width: 13%;
+        margin: 0 auto;
+        padding: 0.5rem;
+        font-size: 16px;
+        background-color: $light_navy;
+        color: $light;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        margin-top: 2rem;
+    }
+}
+
+footer {
+    border-top: 1px solid $orange;
+    padding: 1rem 0;
+    text-align: center;
+    ul {
+        justify-content: center;
+        li {
+            padding: 0 0.3rem 2rem 0.3rem;
+        }
+    }
+    .microverse {
+        color: $orange;
+        text-decoration: none;
+    }
+    z-index: 3;
 }
