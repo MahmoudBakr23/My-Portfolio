@@ -17,6 +17,96 @@ body {
   background-color: #191765;
 }
 
+.one {
+  position: absolute;
+  height: 184px;
+  width: 184px;
+  left: 69px;
+  top: 237px;
+  border-radius: 0px;
+  background: #F64C12;
+  -webkit-filter: blur(30px);
+          filter: blur(30px);
+}
+
+.two {
+  height: 226px;
+  width: 226px;
+  left: 1043px;
+  top: 546px;
+  border-radius: 0px;
+  position: absolute;
+  -webkit-filter: blur(50px);
+          filter: blur(50px);
+  background-color: #EDECFF;
+}
+
+.three {
+  height: 700.9167943595123px;
+  width: 77.52848313611619px;
+  left: 0px;
+  top: 1079.1184692382812px;
+  border-radius: 35%;
+  position: absolute;
+  background: #EDECFF;
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
+  -webkit-transform: rotate(-66.38deg);
+          transform: rotate(-66.38deg);
+}
+
+.four {
+  height: 402.00000592573326px;
+  width: 108.00000159198805px;
+  left: 1160.28125px;
+  top: 1700.7431030273438px;
+  border-radius: 0px;
+  position: absolute;
+  background: #F64C12;
+  -webkit-filter: blur(50px);
+          filter: blur(50px);
+}
+
+.five {
+  height: 155px;
+  width: 308px;
+  left: -41px;
+  top: 2648px;
+  border-top-right-radius: 50%;
+  position: absolute;
+  background: #F64C12;
+  -webkit-filter: blur(50px);
+          filter: blur(50px);
+}
+
+.six {
+  height: 916.3824115191364px;
+  width: 246.19229831609636px;
+  left: 970.298828125px;
+  top: 2534px;
+  border-radius: 0px;
+  position: absolute;
+  background: #EDECFF;
+  -webkit-filter: blur(50px);
+          filter: blur(50px);
+  -webkit-transform: matrix(-0.26, 0.47, 0.47, 0.26, 0, 0);
+          transform: matrix(-0.26, 0.47, 0.47, 0.26, 0, 0);
+}
+
+.effectA:hover {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-box-shadow: 0 0 10px 0 #EDECFF, 0 0 20px 0 #EDECFF, 0 0 40px 0 #EDECFF;
+          box-shadow: 0 0 10px 0 #EDECFF, 0 0 20px 0 #EDECFF, 0 0 40px 0 #EDECFF;
+}
+
+.effectO:hover {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-box-shadow: 0 0 10px 0 #F64C12, 0 0 20px 0 #F64C12, 0 0 40px 0 #F64C12;
+          box-shadow: 0 0 10px 0 #F64C12, 0 0 20px 0 #F64C12, 0 0 40px 0 #F64C12;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -67,5 +157,69 @@ nav ul li a::before {
 nav ul li a:hover::before {
   -webkit-transform: scaleX(0.5);
           transform: scaleX(0.5);
+}
+
+main {
+  text-align: center;
+  margin: 8rem auto;
+}
+
+main h1 {
+  font-size: 70px;
+  line-height: 105.47px;
+  color: #9390FF;
+  font-weight: 700;
+}
+
+main h3 {
+  font-size: 30px;
+}
+
+main p {
+  width: 447px;
+  margin: 0 auto;
+  line-height: 35px;
+  font-size: 20px;
+  font-weight: 200;
+  padding: 5rem 0;
+}
+
+main .skills {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -webkit-column-gap: 0;
+          column-gap: 0;
+  width: 548px;
+  margin: 0 auto;
+  text-align: start;
+  border-top: 1px solid #F64C12;
+  border-bottom: 1px solid #F64C12;
+  padding: 2rem 0;
+}
+
+main .skills ul {
+  list-style: none;
+}
+
+main .skills ul .heading {
+  color: #9390FF;
+  font-size: 18px;
+  padding: 0.5rem 0;
+}
+
+main .skills ul li {
+  line-height: 25.5px;
+  font-size: 13.5px;
+  font-weight: 400;
+}
+
+main .links {
+  padding: 5rem 0;
+}
+
+main .links li {
+  padding: 0 0.5rem;
 }
 /*# sourceMappingURL=style.css.map */
