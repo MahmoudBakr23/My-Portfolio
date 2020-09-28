@@ -21,6 +21,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: $light;
     background-color: $navy;
+    transition: 0.2s;
 }
 
 .one {
@@ -32,6 +33,7 @@ body {
     border-radius: 50%;
     background: $orange;
     filter: blur(30px);
+    transition: 0.2s;
 }
 
 .two {
@@ -43,6 +45,7 @@ body {
     position: absolute;
     filter: blur(50px);
     background-color: $neon;
+    transition: 0.2s;
 }
 
 .three {
@@ -55,6 +58,7 @@ body {
     background: $neon;
     filter: blur(20px);
     transform: rotate(-66.38deg);
+    transition: 0.2s;
 }
 
 .four {
@@ -66,6 +70,7 @@ body {
     position: absolute;
     background: $orange;
     filter: blur(50px);
+    transition: 0.2s;
 }
 
 .five {
@@ -77,6 +82,7 @@ body {
     position: absolute;
     background: $orange;
     filter: blur(50px);
+    transition: 0.2s;
 }
 
 .six {
@@ -89,6 +95,7 @@ body {
     background: #EDECFF;
     filter: blur(50px);
     transform: matrix(-0.26, 0.47, 0.47, 0.26, 0, 0);
+    transition: 0.2s;
 }
 
 .effectA:hover {
