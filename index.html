@@ -93,7 +93,7 @@
                     <li>bootstrap</li>
                     <li>ruby</li>
                 </ul>
-                <button value="See Project" name="show">See Project</button>
+                <button data-modal-target="#modal" value="See Project" name="show">See Project</button>
             </div>
         </div>
         <div class="project">
@@ -106,7 +106,7 @@
                     <li>bootstrap</li>
                     <li>ruby</li>
                 </ul>
-                <button value="See Project" name="show">See Project</button>
+                <button data-modal-target="#modal" value="See Project" name="show">See Project</button>
             </div>
             <img src="#" alt="img-1">
         </div>
@@ -121,7 +121,7 @@
                     <li>bootstrap</li>
                     <li>ruby</li>
                 </ul>
-                <button value="See Project" name="show">See Project</button>
+                <button data-modal-target="#modal" value="See Project" name="show">See Project</button>
             </div>
         </div>
         <div class="project">
@@ -134,10 +134,29 @@
                     <li>bootstrap</li>
                     <li>ruby</li>
                 </ul>
-                <button value="See Project" name="show">See Project</button>
+                <button data-modal-target="#modal">See Project</button>
             </div>
             <img src="#" alt="img-1">
         </div>
+        <div class="modal" id="modal">
+            <div class="modal-header">
+                <h2>Multi-post story</h2>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <img src="#" alt="box-img">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.</p>
+            <ul>
+                <li>css</li>
+                <li>html</li>
+                <li>bootstrap</li>
+                <li>ruby</li>
+            </ul>
+            <div class="modal-buttons">
+                <a href="#">See Live</a>
+                <a href="#">Source Code</a>
+            </div>
+        </div>
+        <div id="overlay"></div>
     </section>
     <section class="contact">
         <h1>Let's Chat</h1>
@@ -165,6 +184,6 @@
         </nav>
         <a href="#" class="microverse">Microverse</a>
     </footer>
-    <script src="./app.js"></script>
 </body>
+<script defer src="app.js"></script>
 </html>
