@@ -143,6 +143,10 @@ nav {
     align-items: center;
     text-align: center;
 
+    .burger {
+        display: none;
+    }
+
     h4 {
         font-size: 14px;
         letter-spacing: 2px;
@@ -476,4 +480,117 @@ footer {
 #overlay.active {
     pointer-events: all;
     opacity: 1;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+    .one,
+    .two,
+    .three,
+    .four,
+    .five,
+    .six,
+    .seven,
+    .eight {
+        display: none;
+    }
+    nav {
+        display: block;
+        .top-header {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+        }
+        .burger {
+            display: block;
+        }
+        ul {
+            display: none;
+        }
+
+        h4 {
+            font-size: 16px;
+            letter-spacing: 2px;
+        }
+    }
+
+    main {
+        margin: 4rem auto;
+        h1 {
+            font-size: 38px;
+            line-height: 62px;
+        }
+        h3 {
+            font-size: 28px;
+        }
+        p {
+            width: 317px;
+            font-size: 16px;
+            line-height: 25px;
+            padding: 5rem 0;
+        }
+
+        .skills {
+            grid-template-columns: repeat(2, 1fr);
+            width: 248px;
+            text-align: center;
+        }
+
+        .linkss {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .work {
+        padding: 0 1rem;
+        h1 {
+            font-size: 35px;
+        }
+        .project {
+            grid-template-columns: 1fr;
+            img {
+                width: 100%;
+                height: 236px;
+                order: -1;
+            }
+            .project-content {
+                h3 {
+                    font-size: 25px;
+                }
+                p {
+                    font-size: 18px;
+                    margin: 1rem 0;
+                }
+            }
+        }
+        ul {
+            margin: 1rem 0;
+        }
+    }
+
+    .contact {
+        width: 300px;
+        margin: 5rem auto;
+        h1 {
+            font-size: 36px;
+        }
+        form {
+            grid-template-columns: 1fr;
+            .email,
+            textarea,
+            button {
+                grid-column: 1/2;
+            }
+            button {
+                width: 100%;
+                margin-top: 1rem;
+            }
+        } 
+    }
+    footer {
+        .linkss {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
 }
