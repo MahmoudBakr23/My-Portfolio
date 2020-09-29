@@ -593,4 +593,38 @@ footer {
         }
     }
 
+    .modal {
+        padding: 0.5rem;
+        max-width: 300px;
+        .modal-header {
+            h2 {
+                font-size: 20px;
+            }
+        }
+        .close-button {
+            font-size: 24px;
+        }
+        img {
+            min-width: 95%;
+            min-height: 218px;
+        }
+        p {
+            width: 280px;
+            line-height: 20px;
+            font-size: 16px;
+            font-weight: 200;
+        }
+        ul {
+            li {
+                padding: 0.2rem 0.5rem;
+                font-size: 14px;
+            }
+        }
+        .modal-buttons {
+            a {
+                font-size: 14px;
+            }
+        }
+    }
+
 }
