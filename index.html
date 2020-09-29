@@ -161,11 +161,15 @@
     <section class="contact">
         <h1>Let's Chat</h1>
         <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
-        <input type="text", name="firstName", placeholder="First Name" class="inputone">
-        <input type="text", name="lastName", placeholder="Last Name" class="inputtwo">
-        <input type="email" name="email" id="email" placeholder="Email Address" class="email">
-        <textarea name="message" id="message" cols="50" rows="7" placeholder="Your message ..."></textarea>
-        <button value="Send" name="show">Send</button>
+        <form action="POST" data-netlify="true">
+            <input type="text", name="firstName", id="firstName", placeholder="First Name" class="inputone">
+            <input type="text", name="lastName", id="lastName", placeholder="Last Name" class="inputtwo">
+            <input type="email" name="email" id="email" placeholder="Email Address" class="email">
+            <textarea name="message" id="message" cols="50" rows="7" placeholder="Your message ..."></textarea>
+            <input type="file" name="myfile" id="myfile" placeholder="Choose File" class="upload">
+            <div data-netlify-recaptcha="true"></div>
+            <button type="submit" value="Send Message">Get in touch</button>
+        </form>
     </section>
     <footer>
         <nav class="links">
