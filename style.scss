@@ -567,6 +567,67 @@ footer {
         }
     }
 
+    #nav-modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 1rem;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 100%;
+        height: 100vh;
+        background-color: $orange;
+        transform: scale(0);
+        transition: 0.5s;
+        button {
+            border: 0;
+            outline: 0;
+            height: 15px;
+            width: 20px;
+            font-size: 38px;
+            line-height: 45px;
+            background-color: transparent;
+            color: $light;
+            transition: 0.5s;
+            &:hover {
+                color: $navy;
+            }
+        }
+        ul {
+            display: block;
+            list-style: none;
+            li {
+                line-height: 45px;
+                a {
+                    text-decoration: none;
+                    position: relative;
+                    transition: 0.5s;
+                    &::before {
+                        content: '';
+                        width: 0;
+                        height: 2px;
+                        position: absolute;
+                        background-color: $navy;
+                        top: 20px;
+                        left: 0;
+                        transition: 0.5s;
+                    }
+    
+                    &:hover::before {
+                        width: 100%;
+                    }
+
+                    &:hover {
+                        color: $navy;
+                    }
+                }
+            }
+        }
+    }
+    #nav-modal.active {
+        transform: scale(1);
+    }
     .contact {
         width: 300px;
         margin: 5rem auto;
