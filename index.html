@@ -18,26 +18,26 @@
     <span class="seven effectA"></span>
     <span class="eight effectO"></span>
 
-    <nav>
+    <nav class="stick">
         <div class="top-header">
             <h4>Mahmoud Bakr</h4>
             <i data-modal-nav="#nav-modal" class="fas fa-bars burger"></i>
         </div>
         <ul>
-            <li><a href="#" class="active">Portfolio</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#portfolio" class="active">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <div id="nav-modal">
             <button data-close-nav class="close-button">&times;</button>
         <ul>
-            <li><a href="#" class="active">Portfolio</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a data-close-nav href="#portfolio" class="active">Portfolio</a></li>
+            <li><a data-close-nav href="#about">About</a></li>
+            <li><a data-close-nav href="#contact">Contact</a></li>
         </ul>
     </div>
-    <main>
+    <main id="about">
         <h1>Mahmoud Bakr</h1>
         <h3>Software Developer</h3>
         <p>I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded,  don’t hestiate to contact me.</p>
@@ -91,7 +91,7 @@
         </nav>
     </main>
 
-    <section class="work">
+    <section class="work" id="portfolio">
         <h1>My recent work</h1>
         <div class="project">
             <img src="#" alt="img-1">
@@ -169,7 +169,7 @@
         </div>
         <div id="overlay"></div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
         <h1>Let's Chat</h1>
         <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
         <form action="POST" data-netlify="true">

@@ -15,6 +15,10 @@ a {
     color: $light;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 html,
 body {
     height: 100vh;
@@ -137,6 +141,14 @@ body {
         0 0 40px 0 $orange,
 }
 
+.stick {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: $light_navy;
+    z-index: 10;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -182,6 +194,11 @@ nav {
             }
         }
     }
+}
+
+#nav-modal {
+    display: none;
+    z-index: 11;
 }
 
 main {
