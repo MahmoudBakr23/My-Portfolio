@@ -189,7 +189,7 @@ main {
             align-self: flex-end;
 
             h3 {
-                line-height: 60px;
+                line-height: 48px;
                 font-size: 40px;
             }
 
@@ -205,7 +205,7 @@ main {
             list-style: none;
             display: flex;
             margin: 2rem 0;
-
+            flex-wrap: wrap;
             li {
                 padding: 0 0.5rem;
                 border-left: 1px solid $orange;
@@ -354,6 +354,7 @@ footer {
                 display: flex;
                 justify-content: center;
                 list-style: none;
+                flex-wrap: wrap;
                 li {
                     padding: 0.3rem 1rem;
                     border-right: 1px solid $orange;
@@ -945,6 +946,7 @@ footer {
             .project-content {
                 h3 {
                     font-size: 25px;
+                    line-height: 35px;
                 }
                 p {
                     font-size: 18px;
@@ -1045,7 +1047,7 @@ footer {
     }
     .modal {
         max-width: 95%;
-        top: 49%;
+        top: 50%;
         .modal-content {
             display: none;
             grid-gap: 10px;
@@ -1065,7 +1067,7 @@ footer {
                 width: 100%;
                 img {
                     width: 100%;
-                    height: 180px;
+                    height: 140px;
                     background: linear-gradient(0deg, #FFFFFF, #FFFFFF), url(image_processing20200716-21735-f07s4k.png);
                 }
             }
@@ -1112,11 +1114,11 @@ footer {
 }
 @media only screen and (min-width: 410px) and (max-width: 500px) {
     .modal {
-        top: 48%;
+        top: 49%;
         .modal-content {
             .modal-img {
                 img {
-                    height: 220px;
+                    height: 160px;
                 }
             }
         }
@@ -1124,11 +1126,11 @@ footer {
 }
 @media only screen and (min-width: 501px) and (max-width: 600px) {
     .modal {
-        top: 47%;
+        top: 49%;
         .modal-content {
             .modal-img {
                 img {
-                    height: 250px;
+                    height: 190px;
                 }
             }
         }
