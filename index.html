@@ -85,7 +85,7 @@
     <section class="work" id="portfolio">
         <h1>My recent work</h1>
         <div class="project">
-            <img src="#" alt="img-1">
+            <img src="./Images/mj1.png" alt="img-1">
             <div class="project-content">
                 <h3>Multi-Post Stories</h3>
                 <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
@@ -95,7 +95,7 @@
                     <li>bootstrap</li>
                     <li>ruby</li>
                 </ul>
-                <button data-modal-target="#modal" value="See Project" name="show">See Project</button>
+                <button data-modal-target="#modal" data-mj-target=".mj">See Project</button>
             </div>
         </div>
         <div class="project">
@@ -108,12 +108,12 @@
                     <li>bootstrap</li>
                     <li>ruby</li>
                 </ul>
-                <button data-modal-target="#modal" value="See Project" name="show">See Project</button>
+                <button data-modal-target="#modal" data-nw-target=".nw">See Project</button>
             </div>
-            <img src="#" alt="img-1">
+            <img src="./Images/nw1.png" alt="newsweek img">
         </div>
         <div class="project">
-            <img src="#" alt="img-1">
+            <img src="./Images/tnw1.png" alt="tnw img">
             <div class="project-content">
                 <h3>Multi-Post Stories</h3>
                 <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
@@ -123,7 +123,7 @@
                     <li>bootstrap</li>
                     <li>ruby</li>
                 </ul>
-                <button data-modal-target="#modal" value="See Project" name="show">See Project</button>
+                <button data-modal-target="#modal" data-tnw-target=".tnw">See Project</button>
             </div>
         </div>
         <div class="project">
@@ -136,26 +136,170 @@
                     <li>bootstrap</li>
                     <li>ruby</li>
                 </ul>
-                <button data-modal-target="#modal">See Project</button>
+                <button data-modal-target="#modal" data-sm-target=".sm">See Project</button>
             </div>
-            <img src="#" alt="img-1">
+            <img src="./Images/sm1.png" alt="sm1">
+        </div>
+        <div class="project">
+            <img src="./Images/ny1.png" alt="tnw img">
+            <div class="project-content">
+                <h3>Multi-Post Stories</h3>
+                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+                <ul>
+                    <li>css</li>
+                    <li>html</li>
+                    <li>bootstrap</li>
+                    <li>ruby</li>
+                </ul>
+                <button data-modal-target="#modal" data-ny-target=".ny">See Project</button>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-content">
+                <h3>Multi-Post Stories</h3>
+                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+                <ul>
+                    <li>css</li>
+                    <li>html</li>
+                    <li>bootstrap</li>
+                    <li>ruby</li>
+                </ul>
+                <button data-modal-target="#modal" data-re-target=".re">See Project</button>
+            </div>
+            <img src="./Images/re1.png" alt="sm1">
         </div>
         <div class="modal" id="modal">
-            <div class="modal-header">
-                <h2>Multi-post story</h2>
-                <button data-close-button class="close-button">&times;</button>
+            <div class="modal-content mj">
+                <div class="modal-header">
+                    <h2>Multi-post story</h2>
+                    <button data-close-button data-close-content class="close-button">&times;</button>
+                </div>
+                <div class="modal-img">
+                    <img src="./Images/mj1.png" alt="my-jpurney project">
+                </div>
+                <div class="modal-body">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    <ul>
+                        <li>css</li>
+                        <li>html</li>
+                        <li>bootstrap</li>
+                        <li>ruby</li>
+                    </ul>
+                </div>
+                <div class="modal-buttons">
+                    <a href="#">Live Link <i style="padding: 0 0.4rem;" class="fas fa-external-link-alt"></i></a>
+                    <a href="#">Source Code <i style="padding: 0 0.4rem;" class="fa fa-github"></i></a>
+                </div>
             </div>
-            <img src="#" alt="box-img">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            <ul>
-                <li>css</li>
-                <li>html</li>
-                <li>bootstrap</li>
-                <li>ruby</li>
-            </ul>
-            <div class="modal-buttons">
-                <a href="#">Live Link <i style="padding: 0 0.4rem;" class="fas fa-external-link-alt"></i></a>
-                <a href="#">Source Code <i style="padding: 0 0.4rem;" class="fa fa-github"></i></a>
+            <div class="modal-content nw">
+                <div class="modal-header">
+                    <h2>Multi-post story</h2>
+                    <button data-close-button data-close-content class="close-button">&times;</button>
+                </div>
+                <div class="modal-img">
+                    <img src="./Images/nw1.png" alt="newsweek project">
+                </div>
+                <div class="modal-body">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    <ul>
+                        <li>css</li>
+                        <li>html</li>
+                        <li>bootstrap</li>
+                        <li>ruby</li>
+                    </ul>
+                </div>
+                <div class="modal-buttons">
+                    <a href="#">Live Link <i style="padding: 0 0.4rem;" class="fas fa-external-link-alt"></i></a>
+                    <a href="#">Source Code <i style="padding: 0 0.4rem;" class="fa fa-github"></i></a>
+                </div>
+            </div>
+            <div class="modal-content tnw">
+                <div class="modal-header">
+                    <h2>Multi-post story</h2>
+                    <button data-close-button data-close-content class="close-button">&times;</button>
+                </div>
+                <div class="modal-img">
+                    <img src="./Images/tnw1.png" alt="newsweek project">
+                </div>
+                <div class="modal-body">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    <ul>
+                        <li>css</li>
+                        <li>html</li>
+                        <li>bootstrap</li>
+                        <li>ruby</li>
+                    </ul>
+                </div>
+                <div class="modal-buttons">
+                    <a href="#">Live Link <i style="padding: 0 0.4rem;" class="fas fa-external-link-alt"></i></a>
+                    <a href="#">Source Code <i style="padding: 0 0.4rem;" class="fa fa-github"></i></a>
+                </div>
+            </div>
+            <div class="modal-content sm">
+                <div class="modal-header">
+                    <h2>Multi-post story</h2>
+                    <button data-close-button data-close-content class="close-button">&times;</button>
+                </div>
+                <div class="modal-img">
+                    <img src="./Images/sm1.png" alt="newsweek project">
+                </div>
+                <div class="modal-body">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    <ul>
+                        <li>css</li>
+                        <li>html</li>
+                        <li>bootstrap</li>
+                        <li>ruby</li>
+                    </ul>
+                </div>
+                <div class="modal-buttons">
+                    <a href="#">Live Link <i style="padding: 0 0.4rem;" class="fas fa-external-link-alt"></i></a>
+                    <a href="#">Source Code <i style="padding: 0 0.4rem;" class="fa fa-github"></i></a>
+                </div>
+            </div>
+            <div class="modal-content ny">
+                <div class="modal-header">
+                    <h2>Multi-post story</h2>
+                    <button data-close-button data-close-content class="close-button">&times;</button>
+                </div>
+                <div class="modal-img">
+                    <img src="./Images/ny1.png" alt="newsweek project">
+                </div>
+                <div class="modal-body">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    <ul>
+                        <li>css</li>
+                        <li>html</li>
+                        <li>bootstrap</li>
+                        <li>ruby</li>
+                    </ul>
+                </div>
+                <div class="modal-buttons">
+                    <a href="#">Live Link <i style="padding: 0 0.4rem;" class="fas fa-external-link-alt"></i></a>
+                    <a href="#">Source Code <i style="padding: 0 0.4rem;" class="fa fa-github"></i></a>
+                </div>
+            </div>
+            <div class="modal-content re">
+                <div class="modal-header">
+                    <h2>Multi-post story</h2>
+                    <button data-close-button data-close-content class="close-button">&times;</button>
+                </div>
+                <div class="modal-img">
+                    <img src="./Images/re1.png" alt="newsweek project">
+                </div>
+                <div class="modal-body">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    <ul>
+                        <li>css</li>
+                        <li>html</li>
+                        <li>bootstrap</li>
+                        <li>ruby</li>
+                    </ul>
+                </div>
+                <div class="modal-buttons">
+                    <a href="#">Live Link <i style="padding: 0 0.4rem;" class="fas fa-external-link-alt"></i></a>
+                    <a href="#">Source Code <i style="padding: 0 0.4rem;" class="fa fa-github"></i></a>
+                </div>
             </div>
         </div>
         <div id="overlay"></div>
